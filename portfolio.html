@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hi I am Pushkar Varshney</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm a passionate web developer with expertise in HTML, CSS, and JavaScript.<br> I enjoy creating responsive and user-friendly websites.
+            </p>
+            <img style="float: right; margin-top: -114px"  src="Screenshot 2023-12-03 010036.png">
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>CSharp</li>
+                <li>Version Control (Git)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Calculator (using html, css and js) </p>
+                <button   style="float: right; margin-top: -60px" id="downloadButton">Download PDF</button>
+
+            
+
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Hompage of Netflix (using html, css and js)</p>
+                <button   style="float: right; margin-top: -60px" id="downloadButton2">Download PDF</button>
+
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+    <button style="margin-left:160px;" id="downloadButton1">My Resume</button>
+
+<script>
+  document.getElementById('downloadButton').addEventListener('click', function() {
+    // Replace 'your_file.pdf' with the actual path to your PDF file
+    const pdfUrl = 'https://drive.google.com/file/d/1rdeXKR-23Au--zyy7YTILTFfaFzgg7Tm/view?usp=sharing';
+
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+
+    // Specify the download attribute along with the desired file name
+    link.download = 'downloaded_file.pdf';
+
+    // Append the link to the document body
+    document.body.appendChild(link);
+
+    // Trigger a click event on the link element to start the download
+    link.click();
+
+    // Remove the link from the document after the download
+    document.body.removeChild(link);
+  });
+</script>
+
+<script>
+    document.getElementById('downloadButton1').addEventListener('click', function() {
+      // Replace 'your_file.pdf' with the actual path to your PDF file
+      const pdfUrl = 'https://drive.google.com/file/d/1Ec-wG_kbbUrKx-loiNzR2oldArFTwwqk/view?usp=drivesdk';
+  
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+  
+      // Specify the download attribute along with the desired file name
+      link.download = 'downloaded_file.pdf';
+  
+      // Append the link to the document body
+      document.body.appendChild(link);
+  
+      // Trigger a click event on the link element to start the download
+      link.click();
+  
+      // Remove the link from the document after the download
+      document.body.removeChild(link);
+    });
+  </script>
+  <script>
+    document.getElementById('downloadButton2').addEventListener('click', function() {
+      // Replace 'your_file.pdf' with the actual path to your PDF file
+      const pdfUrl = 'https://drive.google.com/file/d/1t89msrh0v1NOPeTVPElMfigZ15LJX5YN/view?usp=sharing';
+  
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+  
+      // Specify the download attribute along with the desired file name
+      link.download = 'downloaded_file.pdf';
+  
+      // Append the link to the document body
+      document.body.appendChild(link);
+  
+      // Trigger a click event on the link element to start the download
+      link.click();
+  
+      // Remove the link from the document after the download
+      document.body.removeChild(link);
+    });
+  </script>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: pushkarvarshne@gmail.com</p>
+            <p>LinkedIn: www.linkedin.com/in/pushkar-varshney-55b153238/</p>
+            <p>GitHub: github.com/pushkarvarshney2004</p>
+            <p>Phone No.: 9557143132 </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
